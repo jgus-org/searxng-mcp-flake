@@ -9,7 +9,7 @@ A GitHub Action checks daily for new commits on `main` and automatically updates
 ```nix
 # flake.nix
 {
-  inputs.searxng-mcp.url = "github:jgus/searxng-mcp-flake";
+  inputs.searxng-mcp.url = "github:jgus-org/searxng-mcp-flake";
 
   # ...
   environment.systemPackages = [ inputs.searxng-mcp.packages.${system}.default ];
@@ -19,5 +19,5 @@ A GitHub Action checks daily for new commits on `main` and automatically updates
 Or run directly:
 
 ```sh
-nix run "github:jgus/searxng-mcp-flake"
+nix run "github:jgus-org/searxng-mcp-flake"
 ```
